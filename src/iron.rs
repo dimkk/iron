@@ -104,7 +104,7 @@ impl<H: Handler> Iron<H> {
         Iron {
             handler: handler,
             timeouts: Timeouts::default(),
-            threads: 8 * ::num_cpus::get(),
+            threads: 1,//8 * ::num_cpus::get(),
         }
     }
 
